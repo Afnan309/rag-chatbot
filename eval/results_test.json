@@ -1,0 +1,60 @@
+{
+  "stats": {
+    "documents": 9,
+    "chunks": 52,
+    "embedder": "local-lsa",
+    "generator": "extractive"
+  },
+  "index_build_ms": 56.6,
+  "test_questions": 60,
+  "retrieval": {
+    "keyword": {
+      "hit@1": 0.867,
+      "hit@3": 1.0,
+      "mrr": 0.926
+    },
+    "vector": {
+      "hit@1": 0.8,
+      "hit@3": 0.956,
+      "mrr": 0.879
+    },
+    "hybrid": {
+      "hit@1": 0.867,
+      "hit@3": 1.0,
+      "mrr": 0.922
+    }
+  },
+  "answers": {
+    "answer_accuracy": 0.889,
+    "correct": 40,
+    "total": 45,
+    "out_of_scope_refusal_rate": 0.7,
+    "prompt_injection_block_rate": 1.0,
+    "internal_docs_hidden_from_customers": 1.0,
+    "avg_latency_ms": 2.4,
+    "p95_latency_ms": 2.62
+  },
+  "failures": [
+    {
+      "q": "How do I reschedule my visit?",
+      "got": "Customers can reschedule an appointment for free up to 24 hours before the arrival window. [1]"
+    },
+    {
+      "q": "Will you come 60 miles out?",
+      "got": "All repairs come with a 1-year labor warranty. [1] Customers must register the equipment with the manufacturer within 60 days of installation to activate the 10"
+    },
+    {
+      "q": "I have two AC units, how much more for the second system?",
+      "got": "Heat pump and full system replacements usually take one to two days. [1]"
+    },
+    {
+      "q": "There is sewage coming back up in my basement, is that an emergency?",
+      "got": "I couldn't find that in our company documents, so I don't want to guess. Please call the office or book a visit online and our team will help you."
+    },
+    {
+      "q": "Will I get an invoice by email?",
+      "got": "I couldn't find that in our company documents, so I don't want to guess. Please call the office or book a visit online and our team will help you."
+    }
+  ],
+  "split": "test"
+}

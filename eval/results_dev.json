@@ -1,0 +1,80 @@
+{
+  "stats": {
+    "documents": 9,
+    "chunks": 52,
+    "embedder": "local-lsa",
+    "generator": "extractive"
+  },
+  "index_build_ms": 43.7,
+  "test_questions": 60,
+  "retrieval": {
+    "keyword": {
+      "hit@1": 0.833,
+      "hit@3": 0.958,
+      "mrr": 0.897
+    },
+    "vector": {
+      "hit@1": 0.75,
+      "hit@3": 0.917,
+      "mrr": 0.845
+    },
+    "hybrid": {
+      "hit@1": 0.854,
+      "hit@3": 0.979,
+      "mrr": 0.91
+    }
+  },
+  "answers": {
+    "answer_accuracy": 0.792,
+    "correct": 38,
+    "total": 48,
+    "out_of_scope_refusal_rate": 1.0,
+    "prompt_injection_block_rate": 1.0,
+    "internal_docs_hidden_from_customers": 1.0,
+    "avg_latency_ms": 3.58,
+    "p95_latency_ms": 4.25
+  },
+  "failures": [
+    {
+      "q": "What's the price to service my furnace before winter?",
+      "got": "I couldn't find that in our company documents, so I don't want to guess. Please call the office or book a visit online and our team will help you."
+    },
+    {
+      "q": "Will I still pay the inspection fee if I go ahead with the repair?",
+      "got": "I couldn't find that in our company documents, so I don't want to guess. Please call the office or book a visit online and our team will help you."
+    },
+    {
+      "q": "Can I pay for a new heat pump in monthly installments?",
+      "got": "I couldn't find that in our company documents, so I don't want to guess. Please call the office or book a visit online and our team will help you."
+    },
+    {
+      "q": "How do I file a warranty claim?",
+      "got": "Call our office or use the online booking form and select \"Warranty Service\". [1]"
+    },
+    {
+      "q": "Do I need yearly maintenance to keep my labor warranty?",
+      "got": "Comfort Club tune-ups count as the yearly professional maintenance required to keep the installation labor warranty valid. [1]"
+    },
+    {
+      "q": "How long does a refund take to arrive?",
+      "got": "Heat pump and full system replacements usually take one to two days. [1]"
+    },
+    {
+      "q": "What benefits do maintenance plan members get?",
+      "got": "Priority scheduling: members are booked ahead of non-members, usually within 24 hours. [1] No overtime or weekend charges for members. [1]"
+    },
+    {
+      "q": "How quickly can a technician get to me in an emergency?",
+      "got": "I couldn't find that in our company documents, so I don't want to guess. Please call the office or book a visit online and our team will help you."
+    },
+    {
+      "q": "How much deposit do I pay for a new installation?",
+      "got": "I couldn't find that in our company documents, so I don't want to guess. Please call the office or book a visit online and our team will help you."
+    },
+    {
+      "q": "How often should I change my air filter?",
+      "got": "Homes with pets or allergies should replace them every month. [1]"
+    }
+  ],
+  "split": "dev"
+}
